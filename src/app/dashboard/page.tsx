@@ -54,14 +54,15 @@ export default function Dashboard() {
     setTodos(todos.map(t => (t.id === id ? updated : t)));
   };
 
-  const formatDate = (dateString) => {
+  const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleString(undefined, {
       month: 'short',
       day: 'numeric',
       hour: 'numeric',
-      minute: '2-digit'
+      minute: '2-digit',
     });
   };
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-indigo-50 p-4 sm:p-6 md:p-8">
