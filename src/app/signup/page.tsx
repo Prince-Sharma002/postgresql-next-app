@@ -72,7 +72,7 @@ export default function SignupPage() {
                   required
                 />
               </div>
-              <p className="mt-1 text-xs text-gray-500">We'll send a magic link to this email</p>
+              <p className="mt-1 text-xs text-gray-500">We&apos;ll send a magic link to this email</p>
             </div>
             
             {error && (

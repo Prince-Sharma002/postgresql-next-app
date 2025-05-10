@@ -19,6 +19,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ user });
   } catch (error) {
+    console.log("signup error : " , error)
     return NextResponse.json({ error: 'Email already exists' }, { status: 500 });
   }
 }
